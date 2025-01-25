@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cg_string",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cg_string",
+  "parent":{
+    "name":"CG_Modules",
+    "path":"folders/__Libraries/CG_Modules.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"FunctionQueue",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"FunctionQueue",
+  "parent":{
+    "name":"FunctionQueue",
+    "path":"folders/__Libraries/FunctionQueue.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
