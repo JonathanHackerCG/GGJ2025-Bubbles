@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Script18",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Script18",
+  "parent":{
+    "name":"GGJ2025-Bubbles",
+    "path":"GGJ2025-Bubbles.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

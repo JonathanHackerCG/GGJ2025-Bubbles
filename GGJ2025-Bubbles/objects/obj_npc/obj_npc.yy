@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_test",
+  "%Name":"obj_npc",
   "eventList":[],
   "managed":true,
-  "name":"obj_test",
+  "name":"obj_npc",
   "overriddenProperties":[],
   "parent":{
     "name":"GGJ2025-Bubbles",
@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_parrot",
-    "path":"sprites/spr_parrot/spr_parrot.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

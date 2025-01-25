@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_test",
-  "eventList":[],
+  "%Name":"obj_sticker",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_test",
+  "name":"obj_sticker",
   "overriddenProperties":[],
   "parent":{
     "name":"GGJ2025-Bubbles",
@@ -27,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_parrot",
-    "path":"sprites/spr_parrot/spr_parrot.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
