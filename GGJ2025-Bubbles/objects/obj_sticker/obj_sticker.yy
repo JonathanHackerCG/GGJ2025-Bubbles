@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_test",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_sticker",
+  "eventList":[],
   "managed":true,
-  "name":"obj_test",
+  "name":"obj_sticker",
   "overriddenProperties":[],
   "parent":{
-    "name":"GGJ2025-Bubbles",
-    "path":"GGJ2025-Bubbles.yyp",
+    "name":"Stickers",
+    "path":"folders/Stickers.yy",
   },
   "parentObjectId":null,
   "persistent":false,
