@@ -19,11 +19,15 @@
   "name":"GGJ2025-Bubbles",
   "resources":[
     {"id":{"name":"rm_initialize","path":"rooms/rm_initialize/rm_initialize.yy",},},
+    {"id":{"name":"rm_sea","path":"rooms/rm_sea/rm_sea.yy",},},
+    {"id":{"name":"rm_town","path":"rooms/rm_town/rm_town.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_initialize","path":"rooms/rm_initialize/rm_initialize.yy",},},
+    {"roomId":{"name":"rm_sea","path":"rooms/rm_sea/rm_sea.yy",},},
+    {"roomId":{"name":"rm_town","path":"rooms/rm_town/rm_town.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
