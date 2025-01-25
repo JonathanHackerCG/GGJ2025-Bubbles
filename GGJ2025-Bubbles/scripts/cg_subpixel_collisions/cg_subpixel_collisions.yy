@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cg_subpixel_collisions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cg_subpixel_collisions",
+  "parent":{
+    "name":"CG_Modules",
+    "path":"folders/__Libraries/CG_Modules.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
