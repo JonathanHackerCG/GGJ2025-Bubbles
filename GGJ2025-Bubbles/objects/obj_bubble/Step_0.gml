@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (mouse_check_button(mb_left) && position_meeting(mouse_x, mouse_y, id)) {
+	mouse_clear(mb_left);
 	sticker.image_xscale = 1;
 	sticker.image_yscale = 1;
 	// Insert item sticker into GAME's list of freed stickers
