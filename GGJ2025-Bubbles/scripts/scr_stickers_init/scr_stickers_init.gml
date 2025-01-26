@@ -12,6 +12,17 @@ enum STICKER
 	BUSH,
 	BIG_CHEESE_HAT,
 	SPONGE_AND_STAR,
+	CHAIR,
+	CONE_SHELL,
+	CRAB,
+	MAITAI,
+	MESSAGE_IN_A_BOTTLE,
+	OIIAI,
+	SAND_DOLLAR,
+	SANDCASTLE,
+	TOWEL,
+	UMBRELLA,
+	COCONUT_DRINK,
 	__TOTAL
 }
 
@@ -33,31 +44,6 @@ function sticker_deregister(_id)
 	return global.__sticker_index[_id];
 }
 #endregion
-
-//#region npc_deregister(id);
-///// @func npc_deregister(id)
-///// @desc specifies an npc sticker to deregister from the global sticker list
-//function npc_deregister(_id)
-//{
-//	var npc_list = array_filter(global.__sticker_index, function(s) {
-//		return is_sticker_npc(s)
-//	});
-	
-//	return npc_list[_id];
-//}
-//#endregion
-//#region item_deregister(id);
-///// @func item_deregister(id)
-///// @desc specifies a non-npc sticker to deregister from the global sticker list
-//function item_deregister(_id)
-//{
-//	var item_list = array_filter(global.__sticker_index, function(s) {
-//		return !is_sticker_npc(s)
-//	});
-	
-//	return item_list[_id];
-//}
-//#endregion
 
 #region
 /// @func get_random_npc(id);
@@ -112,3 +98,14 @@ sticker_define(STICKER.FLUFF_TREE, spr_tree_fluff);
 sticker_define(STICKER.PALM_TREE, spr_tree_palm);
 sticker_define(STICKER.PINE_TREE, spr_tree_pine);
 sticker_define(STICKER.SPONGE_AND_STAR, spr_spongeboy);
+sticker_define(STICKER.CHAIR, spr_chair);
+sticker_define(STICKER.CONE_SHELL, spr_cone_shell);
+sticker_define(STICKER.CRAB, spr_crab);
+sticker_define(STICKER.MAITAI, spr_maitai);
+sticker_define(STICKER.MESSAGE_IN_A_BOTTLE, spr_message_in_a_bottle);
+sticker_define(STICKER.OIIAI, spr_oiiai);
+sticker_define(STICKER.SAND_DOLLAR, spr_sand_dollar);
+sticker_define(STICKER.SANDCASTLE, spr_sandcastle);
+sticker_define(STICKER.TOWEL, spr_towel);
+sticker_define(STICKER.UMBRELLA, spr_umbrella);
+sticker_define(STICKER.COCONUT_DRINK, spr_coconut_drink);
