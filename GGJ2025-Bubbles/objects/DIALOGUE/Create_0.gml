@@ -7,6 +7,8 @@ __text_string = "";
 __text_scribble = undefined;
 __typewriter = scribble_typist();
 
+index = 0; //Randomization Index (Used in scene_* functions).
+
 //Methods
 #region active();
 __active = false;
@@ -91,6 +93,12 @@ refresh = function()
 #region STEP
 step = function()
 {
+	if (keyboard_check_pressed(vk_escape))
+	{
+		keyboard_clear(vk_escape);
+		clear();
+	}
+	
 	var _active_prev = __active;
 	__active = fqueue.update();
 	if (!__active && __active != _active_prev)
@@ -125,4 +133,4 @@ draw_gui = function()
 }
 #endregion
 
-cutscene_intro();
+scene_intro();
