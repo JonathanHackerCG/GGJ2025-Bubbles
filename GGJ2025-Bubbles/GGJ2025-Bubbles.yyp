@@ -65,6 +65,7 @@
     {"id":{"name":"FunctionQueue","path":"scripts/FunctionQueue/FunctionQueue.yy",},},
     {"id":{"name":"scr_sticker","path":"scripts/scr_sticker/scr_sticker.yy",},},
     {"id":{"name":"scr_stickers_init","path":"scripts/scr_stickers_init/scr_stickers_init.yy",},},
+    {"id":{"name":"scr_stickers_logic","path":"scripts/scr_stickers_logic/scr_stickers_logic.yy",},},
     {"id":{"name":"spr_background_sea","path":"sprites/spr_background_sea/spr_background_sea.yy",},},
     {"id":{"name":"spr_background_town","path":"sprites/spr_background_town/spr_background_town.yy",},},
     {"id":{"name":"spr_big_cheese","path":"sprites/spr_big_cheese/spr_big_cheese.yy",},},

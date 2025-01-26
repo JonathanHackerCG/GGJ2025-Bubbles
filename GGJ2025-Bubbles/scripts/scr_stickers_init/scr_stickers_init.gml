@@ -14,6 +14,7 @@ enum STICKER
 	SPONGE_AND_STAR,
 	__TOTAL
 }
+
 #region sticker_register(id, sticker);
 /// @func sticker_register
 /// @desc Registers a new Sticker in global scope.
@@ -32,6 +33,55 @@ function sticker_deregister(_id)
 	return global.__sticker_index[_id];
 }
 #endregion
+
+//#region npc_deregister(id);
+///// @func npc_deregister(id)
+///// @desc specifies an npc sticker to deregister from the global sticker list
+//function npc_deregister(_id)
+//{
+//	var npc_list = array_filter(global.__sticker_index, function(s) {
+//		return is_sticker_npc(s)
+//	});
+	
+//	return npc_list[_id];
+//}
+//#endregion
+//#region item_deregister(id);
+///// @func item_deregister(id)
+///// @desc specifies a non-npc sticker to deregister from the global sticker list
+//function item_deregister(_id)
+//{
+//	var item_list = array_filter(global.__sticker_index, function(s) {
+//		return !is_sticker_npc(s)
+//	});
+	
+//	return item_list[_id];
+//}
+//#endregion
+
+#region
+/// @func get_random_npc(id);
+/// @desc gets random npc from global sticker list
+function get_random_npc()
+{
+	var rand_sticker_init_index = irandom_range(STICKER.PARROT, STICKER.MAYOR);
+	var sticker_id = rand_sticker_init_index;
+	var _sticker = sticker_deregister(sticker_id);
+	return _sticker;
+}
+#endregion
+
+#region
+/// @func get_random_item
+/// @desc gets random item from global sticker list
+function get_random_item()
+{
+	var rand_sticker_init_index = irandom_range(STICKER.MAYOR, STICKER.__TOTAL-1);
+	var sticker_id = rand_sticker_init_index;
+	var _sticker = sticker_deregister(sticker_id);
+	return _sticker;
+}
+
 #region sticker_define(id, sprite_index);
 /// @func sticker_define
 /// @desc Defines a new sticker, providing some common default parameters.
