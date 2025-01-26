@@ -5,7 +5,7 @@
 #macro V_SOUND AUDIO.volume_sound
 #macro V_MUSIC AUDIO.volume_music
 
-V_SOUND = 0.5;
+V_SOUND = 0.6;
 V_MUSIC = 0.4;
 
 sound_count = 0;
@@ -69,3 +69,5 @@ function play_as(_inst, _sound, _volume = V_SOUND, _pitch = 0.05, _pitch_off = 0
 	AUDIO.play(_sound, _volume, _pitch, _pitch_off, _loop);
 }
 #endregion
+
+music = undefined;
