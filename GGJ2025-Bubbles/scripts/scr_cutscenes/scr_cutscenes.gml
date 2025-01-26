@@ -38,15 +38,72 @@ function scene_mayor_happy()
 {
 	static LINES = array_shuffle([
 		"I say, I say, you have done a mighty fine job at cleaning up this Town.",
-		"I say, there ain’t nothin’ wrong with a grown man enjoying a mai tai. Thank you for that.",
-		"I been livin’ in PortsBay Townsville all my life. You ask how long? I say, never ask a gentleman his age. It’s impolite.",
-		"I say, have you met Adah yet? That girl’s always got her head in a book."
+		"I say, there ain't nothin' wrong with a grown man enjoying a mai tai. Thank you for that.",
+		"I been livin' in PortsBay Townsville all my life. You ask how long? I say, never ask a gentleman his age. It's impolite.",
+		"I say, have you met Adah yet? That girl's always got her head in a book."
 	]);
 	var _index = DIALOGUE.index % array_length(LINES);
 	
 	with (DIALOGUE) {
 	flier(spr_flier_mayor);
 	text(LINES[_index]);
+} }
+#endregion
+#region scene_parrot_wants();
+function scene_parrot_wants()
+{
+	static LINES = array_shuffle([
+		"The worst part about being in that bubble was that I lost my tan SQUAWK. Tell me if you find my old (BEACH CHAIR) SQUAWK.",
+		"I NEED to go dancing SQUAWK.",
+		"I like to party SQUAWK but sometimes i just like a quiet night in."
+	]);
+	var _index = DIALOGUE.index % array_length(LINES);
+	
+	with (DIALOGUE) {
+	flier(spr_flier_parrot);
+	text(LINES[_index]);
+} }
+#endregion
+#region scene_parrot_happy();
+function scene_parrot_happy()
+{ with (DIALOGUE) {
+	flier(spr_flier_parrot);
+	text("I finally caught some SQUAWK rays. Don't I look good? SQUAWK.");
+} }
+#endregion
+#region scene_fish_wants();
+function scene_fish_wants()
+{ with (DIALOGUE) {
+	flier(spr_flier_fish);
+	text("Have you seen my (CAT)? Her name is BrainRot, I hope she's okay...");
+} }
+#endregion
+#region scene_fish_happy();
+function scene_fish_happy()
+{ with (DIALOGUE) {
+	flier(spr_flier_fish);
+	text("My girl BrainRot is so sweet. Thank you so much for finding her.");
+} }
+#endregion
+#region scene_otter_wants();
+function scene_otter_wants()
+{
+	static LINES = array_shuffle([
+		"Thank you so much for saving me from the bubble. I didn't think I'd make it.",
+		"I want to stay on the beach, but the sun's too bright to read my book. The beach or reading... hmmm... if only I had an (UMBRELLA)"
+	]);
+	var _index = DIALOGUE.index % array_length(LINES);
+	
+	with (DIALOGUE) {
+	flier(spr_flier_otter);
+	text(LINES[_index]);
+} }
+#endregion
+#region scene_otter_happy();
+function scene_otter_happy()
+{ with (DIALOGUE) {
+	flier(spr_flier_otter);
+	text("Now that there's shade I can finally finish my book.");
 } }
 #endregion
 

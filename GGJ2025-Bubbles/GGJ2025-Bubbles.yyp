@@ -62,6 +62,7 @@
   },
   "name":"GGJ2025-Bubbles",
   "resources":[
+    {"id":{"name":"fnt_label","path":"fonts/fnt_label/fnt_label.yy",},},
     {"id":{"name":"fnt_text_100","path":"fonts/fnt_text_100/fnt_text_100.yy",},},
     {"id":{"name":"fnt_text_125","path":"fonts/fnt_text_125/fnt_text_125.yy",},},
     {"id":{"name":"fnt_text_150","path":"fonts/fnt_text_150/fnt_text_150.yy",},},

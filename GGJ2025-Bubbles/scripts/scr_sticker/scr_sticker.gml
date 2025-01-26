@@ -10,6 +10,7 @@ function StickerProperties() constructor
 	
 	
 	object = obj_sticker;	//The object to instantiate.
+	sticker_id = undefined;
 }
 #endregion
 #region Sticker(properties);
@@ -30,8 +31,21 @@ function Sticker(_properties = undefined) constructor
 	static instantiate = function(_x, _y, _layer, _properties = undefined)
 	{
 		var _properties_final = struct_join(properties, _properties);
-		return instance_create_layer(_x, _y, _layer, _properties_final.object, _properties_final);
+		var _inst = instance_create_layer(_x, _y, _layer, _properties_final.object, _properties_final);
+		_inst.sticker_id = properties.sticker_id;
+		return _inst;
 	}
 	#endregion
+}
+#endregion
+
+#region sticker_exists(sticker_id);
+function sticker_exists(_sticker_id)
+{
+	with (obj_sticker)
+	{
+		if (sticker_id == _sticker_id) { return true; }
+	}
+	return false;
 }
 #endregion

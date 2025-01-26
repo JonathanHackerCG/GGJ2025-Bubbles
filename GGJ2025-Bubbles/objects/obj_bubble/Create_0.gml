@@ -12,7 +12,16 @@ if (is_sticker_npc(sticker_id)) {
 	
 }
 var _sticker = sticker_deregister(sticker_id);
-sticker = _sticker.instantiate(x, y, "Instances");
+if (is_sticker_npc(sticker_id))
+{
+	sticker = _sticker.instantiate(x, y, "Instances", {
+		object: obj_npc
+	});
+}
+else
+{
+	sticker = _sticker.instantiate(x, y, "Instances");
+}
 
 sticker.sticker_id = sticker_id;
 var xscale = floor((sprite_get_width(spr_bubble) / sticker.sprite_width) * 4) * 0.25;
