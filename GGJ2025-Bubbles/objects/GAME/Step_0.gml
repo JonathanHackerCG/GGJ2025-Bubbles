@@ -7,6 +7,7 @@ if (keyboard_check_pressed(vk_space)) {
 	room_goto((room == rm_sea) ? rm_town : rm_sea);
 }
 
+
 //if (array_length(freed_sticker_ids) > 0) {
 //	show_debug_message(freed_sticker_ids)
 //}

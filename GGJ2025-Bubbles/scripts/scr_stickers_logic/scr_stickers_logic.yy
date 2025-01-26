@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_stickers_logic",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_stickers_logic",
+  "parent":{
+    "name":"Stickers",
+    "path":"folders/Scripts/Stickers.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

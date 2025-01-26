@@ -3,7 +3,7 @@
 if (mouse_check_button(mb_left) && position_meeting(mouse_x, mouse_y, id)) {
 	sticker.image_xscale = 1;
 	sticker.image_yscale = 1;
-	// Insert sticker into GAME's list of freed stickers
+	// Insert item sticker into GAME's list of freed stickers
 	array_push(GAME.freed_sticker_ids, sticker.sticker_id)
 	instance_destroy();
 }
