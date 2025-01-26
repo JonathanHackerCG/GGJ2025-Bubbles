@@ -1,10 +1,10 @@
 /// @description Camera initialization and methods.
 // Updated 10/24/2024: Fixed application_surface off by 1, and rounded follow target position.
 
-default_wmin = 180;
+default_wmin = 240;
 default_wmax = 320;
 default_hmin = 180;
-default_hmax = 320;
+default_hmax = 180;
 default_spre = 4;
 
 #region EDIT: Camera settings.
@@ -48,7 +48,7 @@ max_zoom = 4;
 min_zoom = 1;
 zoom = 1;
 
-cam_panning_buffer = 10;
+cam_panning_buffer = 0;
 #endregion
 
 #region init();
@@ -108,9 +108,14 @@ function update()
 	spd_move = 0;
 	
 	//Center camera position and clamp within room.
-	var set_xpos = xpos - (w / 2) + (random_range(-__screenshake / 2, __screenshake / 2) * 2);
-	var set_ypos = ypos - (h / 2) + (random_range(-__screenshake / 2, __screenshake / 2) * 2);
-	__screenshake = lerp(__screenshake, 0, 0.5);
+	var set_xpos = xpos - (w / 2);
+	var set_ypos = ypos - (h / 2);
+	if (__screenshake > 0)
+	{
+		set_xpos = xpos - (w / 2) + (random_range(-__screenshake / 2, __screenshake / 2) * 2);
+		set_ypos = ypos - (h / 2) + (random_range(-__screenshake / 2, __screenshake / 2) * 2);
+		__screenshake = lerp(__screenshake, 0, 0.5);
+	}
 	
 	if (clamp_inbounds)
 	{
@@ -193,24 +198,18 @@ function init_screen(w_min, w_max, h_min, h_max, scale_base, fullscreen, origina
 		target_h = screen_h - buffer_h; //Target final height.
 	}
 	#endregion
-	#region Determining the scale factor.
-	var a, a_max = 0;
-	var scale_w = clamp(w_max, w_min, target_w);
-	var scale_h = clamp(h_max, h_min, target_h);
-	var scale_real = 1;
-	#endregion
-	#region Choosing viable scale factors from the base scale value
+	#region Calculate the largest possible scale factor based on target size.
 	var scale_list;
 	if (original) { scale_list = [1]; }
 	else
 	{
 		scale_list = post_scale_options;
 	}
-	#endregion
-	#region Calculate the largest possible scale factor based on target size.
+	
 	var _size = array_length(scale_list);
 	var _scale_base = pre_scale_options[pre_scale_index];
 	var s, w_min_scaled, w_max_scaled, h_min_scaled, h_max_scaled;
+	var a, a_max = 0;
 	for (var i = 0; i < _size; i++)
 	{
 		s = scale_list[i];
