@@ -54,11 +54,11 @@ text = function(_string)
 	});
 }
 #endregion
-#region sprite();
-/// @func sprite
+#region flier();
+/// @func flier
 /// @desc Shows a sprite in the dialogue.
 /// @arg	{Asset.GMSprite} sprite
-sprite = function(_sprite)
+flier = function(_sprite)
 {
 	fqueue.push(function(_sprite)
 	{
@@ -74,7 +74,7 @@ refresh = function()
 	GUIW = display_get_gui_width();
 	GUIH = display_get_gui_height();
 	GUIS = CAMERA.gui_s;
-	BUFFER = 16 * GUIS;
+	BUFFER = 32 * GUIS;
 	
 	if (__text_string != "")
 	{
@@ -104,7 +104,10 @@ draw = function()
 {
 	if (__sprite != undefined)
 	{
-		draw_sprite(__sprite, 0, 0, 0);
+		var xx = room_width / 2;
+		var yy = room_height / 2;
+		draw_sprite(spr_flier, 0, xx, yy);
+		draw_sprite(__sprite, 0, xx, yy);
 	}
 }
 #endregion
