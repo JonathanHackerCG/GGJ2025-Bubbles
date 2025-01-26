@@ -24,4 +24,4 @@ sticker.image_yscale = sticker.image_xscale
 
 
 // Randomize bubble speed on instantiation
-vspeed = -1 * random_range(0.1, 1);
+bubble_speed = random_range(0.25, 2);
