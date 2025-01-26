@@ -3,12 +3,22 @@
 if (room == rm_town) {
 	// Populate beach with stickers
 	for (var i = 0; i < array_length(freed_sticker_ids); i += 1) {
-		show_debug_message(freed_sticker_ids[i])
-		var _sticker = sticker_deregister(freed_sticker_ids[i]);
+		var _sticker_id = freed_sticker_ids[i];
+		var _sticker = sticker_deregister(_sticker_id);
 		
 		var xx = (room_width / 2) + irandom_range(-8, 8);
 		var yy = (room_height / 2) + irandom_range(-8, 8);
-		_sticker.instantiate(xx, yy, "Instances");	
+		
+		if (is_sticker_npc(_sticker_id))
+		{
+			_sticker.instantiate(xx, yy, "Instances", {
+				object: obj_npc
+			});
+		}
+		else
+		{
+			_sticker.instantiate(xx, yy, "Instances");
+		}
 	}
 	// Reset array
 	freed_sticker_ids = [];

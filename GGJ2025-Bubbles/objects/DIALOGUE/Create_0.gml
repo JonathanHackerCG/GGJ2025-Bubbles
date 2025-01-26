@@ -40,9 +40,10 @@ text = function(_string)
 	}, [_string]);
 	fqueue.push(function()
 	{
-		if (keyboard_check_pressed(vk_space))
+		if (keyboard_check_released(vk_space) || mouse_check_button_released(mb_left))
 		{
 			keyboard_clear(vk_space);
+			mouse_clear(mb_left);
 			if (__typewriter.get_state() == 1)
 			{
 				return true;
@@ -93,7 +94,7 @@ refresh = function()
 #region STEP
 step = function()
 {
-	if (keyboard_check_pressed(vk_escape))
+	if (keyboard_check_released(vk_escape))
 	{
 		keyboard_clear(vk_escape);
 		clear();

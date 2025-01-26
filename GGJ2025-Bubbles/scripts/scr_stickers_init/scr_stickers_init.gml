@@ -77,6 +77,7 @@ function get_random_item()
 function sticker_define(_id, _sprite_index)
 {
 	var _sticker = new Sticker({
+		sticker_id: _id,
 		sprite_index: _sprite_index
 	});
 	sticker_register(_id, _sticker);
