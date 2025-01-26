@@ -5,8 +5,8 @@
 #macro V_SOUND AUDIO.volume_sound
 #macro V_MUSIC AUDIO.volume_music
 
-V_SOUND = 0.6;
-V_MUSIC = 0.4;
+V_SOUND = 0.8;
+V_MUSIC = 0.2;
 
 sound_count = 0;
 #region audio.play(...);

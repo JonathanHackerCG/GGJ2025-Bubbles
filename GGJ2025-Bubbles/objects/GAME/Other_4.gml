@@ -5,7 +5,10 @@ if (room == rm_town) {
 	for (var i = 0; i < array_length(freed_sticker_ids); i += 1) {
 		show_debug_message(freed_sticker_ids[i])
 		var _sticker = sticker_deregister(freed_sticker_ids[i]);
-		_sticker.instantiate(x, y, "Instances");	
+		
+		var xx = (room_width / 2) + irandom_range(-8, 8);
+		var yy = (room_height / 2) + irandom_range(-8, 8);
+		_sticker.instantiate(xx, yy, "Instances");	
 	}
 	// Reset array
 	freed_sticker_ids = [];
@@ -14,8 +17,10 @@ if (room == rm_town) {
 	var rand_bubble_count = irandom_range(1, 5);
 	for (var i = 0; i <= rand_bubble_count; i += 1) {
 		// Create up to rand_bubble_count of bubbles with random spawn position
-		var x_rand = irandom_range(0 + (spr_bubble.sprite_width / 2), room_width - (spr_bubble.sprite_width / 2));
-		var y_rand = irandom_range(0 + (spr_bubble.sprite_height / 2), room_height + spr_bubble.sprite_height / 2);
+		var w = sprite_get_width(spr_bubble);
+		var h = sprite_get_height(spr_bubble);
+		var x_rand = irandom_range(w, room_width - w);
+		var y_rand = irandom_range(h, room_height + h);
 		instance_create_layer(x_rand, y_rand, "Instances", obj_bubble);
 	}
 	
