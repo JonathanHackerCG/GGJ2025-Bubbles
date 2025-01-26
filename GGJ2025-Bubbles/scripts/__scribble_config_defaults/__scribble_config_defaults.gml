@@ -10,9 +10,9 @@
 #macro SCRIBBLE_SLANT_GRADIENT              0.25     //The x-axis displacement when using the [slant] tag as a proportion of the glyph height
 #macro SCRIBBLE_DEFAULT_Z                   0        //Default z-position when drawing text models. This can be overwritten by the .z() text element method
 
-#macro SCRIBBLE_DEFAULT_WAVE_SIZE           4        //Default wave amplitude, in pixels
+#macro SCRIBBLE_DEFAULT_WAVE_SIZE           2        //Default wave amplitude, in pixels
 #macro SCRIBBLE_DEFAULT_WAVE_FREQUENCY      50       //Default wave frequency. Larger values create more "humps" over a certain number of characters
-#macro SCRIBBLE_DEFAULT_WAVE_SPEED          0.2      //Default wave speed. Larger numbers cause characters to move up and down more rapidly
+#macro SCRIBBLE_DEFAULT_WAVE_SPEED          0.1      //Default wave speed. Larger numbers cause characters to move up and down more rapidly
 
 #macro SCRIBBLE_DEFAULT_SHAKE_SIZE          2        //Default shake amplitude, in pixels
 #macro SCRIBBLE_DEFAULT_SHAKE_SPEED         0.4      //Default shake speed. Larger values cause characters to move around more rapidly

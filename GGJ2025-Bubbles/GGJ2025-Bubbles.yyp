@@ -118,6 +118,7 @@
     {"id":{"name":"draw_text_scribble_ext","path":"scripts/draw_text_scribble_ext/draw_text_scribble_ext.yy",},},
     {"id":{"name":"draw_text_scribble","path":"scripts/draw_text_scribble/draw_text_scribble.yy",},},
     {"id":{"name":"FunctionQueue","path":"scripts/FunctionQueue/FunctionQueue.yy",},},
+    {"id":{"name":"scr_cutscenes","path":"scripts/scr_cutscenes/scr_cutscenes.yy",},},
     {"id":{"name":"scr_fonts","path":"scripts/scr_fonts/scr_fonts.yy",},},
     {"id":{"name":"scr_sticker","path":"scripts/scr_sticker/scr_sticker.yy",},},
     {"id":{"name":"scr_stickers_init","path":"scripts/scr_stickers_init/scr_stickers_init.yy",},},

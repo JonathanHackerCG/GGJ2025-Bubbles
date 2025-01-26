@@ -72,6 +72,7 @@ refresh = function()
 	{
 		__text_scribble = scribble(__text_string)
 			.align(fa_center, fa_bottom)
+			.wrap(GUIW * 0.6)
 			.starting_format(get_font_scaled_name("text"));
 	}
 	
@@ -111,3 +112,5 @@ draw_gui = function()
 	}
 }
 #endregion
+
+cutscene_intro();
