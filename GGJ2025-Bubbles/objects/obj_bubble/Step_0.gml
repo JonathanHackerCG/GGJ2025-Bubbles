@@ -9,10 +9,11 @@ if (mouse_check_button(mb_left) && position_meeting(mouse_x, mouse_y, id)) {
 }
 
 if (y + sprite_height > 0) {
-	y -= 1;
+	y -= bubble_speed;
 } else {
 	y = room_height + sprite_height;
 }
 
 sticker.y = y;
 sticker.x = x;
+
