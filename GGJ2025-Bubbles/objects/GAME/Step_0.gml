@@ -2,8 +2,11 @@
 // You can write your code in this editor
 
 // hotkey
-if (keyboard_check_pressed(vk_enter)) {
-	screen_save("My Beach");
+//if (keyboard_check_pressed(vk_enter)) {
+//	screen_save("My Beach");
+//}
+if (keyboard_check_pressed(vk_escape)) {
+	game_end();
 }
 
 //if (array_length(freed_sticker_ids) > 0) {
