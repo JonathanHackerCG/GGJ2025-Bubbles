@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_sticker",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_sticker",
+  "parent":{
+    "name":"Stickers",
+    "path":"folders/Stickers.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
