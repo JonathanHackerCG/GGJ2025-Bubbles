@@ -30,5 +30,7 @@ if (mouse_check_button_pressed(mb_right) && position_meeting(mouse_x, mouse_y, i
 
 if (grabbed) {
 	x = mouse_x - x_offset;
-	y = mouse_y - y_offset;
+	y = mouse_y - y_offset; 
+} else {
+	
 }

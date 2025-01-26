@@ -93,7 +93,7 @@ sticker_define(STICKER.MAYOR, spr_mayor_icon);
 // Items
 sticker_define(STICKER.WILSON, spr_willy);
 sticker_define(STICKER.BIG_CHEESE_HAT, spr_big_cheese);
-sticker_define(STICKER.BUSH, spr_bush);
+sticker_define(STICKER.BUSH, spr_bush); 
 sticker_define(STICKER.FLUFF_TREE, spr_tree_fluff);
 sticker_define(STICKER.PALM_TREE, spr_tree_palm);
 sticker_define(STICKER.PINE_TREE, spr_tree_pine);

@@ -1,18 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_sticker_lighthouse",
-  "eventList":[],
+  "%Name":"obj_ux_buttons",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_sticker_lighthouse",
+  "name":"obj_ux_buttons",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"obj_sticker",
-    "path":"objects/obj_sticker/obj_sticker.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
