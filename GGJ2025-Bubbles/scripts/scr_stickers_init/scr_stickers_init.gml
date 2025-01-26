@@ -3,6 +3,13 @@ enum STICKER
 {
 	PARROT,
 	LIGHTHOUSE,
+	PINE_TREE,
+	FLUFF_TREE,
+	PALM_TREE,
+	WILSON,
+	BUSH,
+	BIG_CHEESE_HAT,
+	SPONGE_AND_STAR,
 	__TOTAL
 }
 #region sticker_register(id, sticker);
@@ -40,3 +47,11 @@ function sticker_define(_id, _sprite_index)
 #endregion
 
 sticker_define(STICKER.PARROT, spr_parrot_icon);
+sticker_define(STICKER.WILSON, spr_ball_test);
+sticker_define(STICKER.LIGHTHOUSE, spr_lighthouse_test);
+sticker_define(STICKER.BIG_CHEESE_HAT, spr_big_cheese);
+sticker_define(STICKER.BUSH, spr_bush);
+sticker_define(STICKER.FLUFF_TREE, spr_tree_fluff);
+sticker_define(STICKER.PALM_TREE, spr_tree_palm);
+sticker_define(STICKER.PINE_TREE, spr_tree_pine);
+sticker_define(STICKER.SPONGE_AND_STAR, spr_spongeboy);

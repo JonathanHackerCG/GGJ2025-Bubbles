@@ -6,7 +6,7 @@
   "name":"scr_stickers_init",
   "parent":{
     "name":"Stickers",
-    "path":"folders/Stickers.yy",
+    "path":"folders/Scripts/Stickers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

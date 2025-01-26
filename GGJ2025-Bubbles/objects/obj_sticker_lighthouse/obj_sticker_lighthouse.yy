@@ -6,8 +6,8 @@
   "name":"obj_sticker_lighthouse",
   "overriddenProperties":[],
   "parent":{
-    "name":"GGJ2025-Bubbles",
-    "path":"GGJ2025-Bubbles.yyp",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":{
     "name":"obj_sticker",
