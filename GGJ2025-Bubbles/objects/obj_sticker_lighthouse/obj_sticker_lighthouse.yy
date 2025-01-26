@@ -6,8 +6,8 @@
   "name":"obj_sticker_lighthouse",
   "overriddenProperties":[],
   "parent":{
-    "name":"GGJ2025-Bubbles",
-    "path":"GGJ2025-Bubbles.yyp",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":{
     "name":"obj_sticker",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite5",
-    "path":"sprites/Sprite5/Sprite5.yy",
+    "name":"spr_lighthouse_test",
+    "path":"sprites/spr_lighthouse_test/spr_lighthouse_test.yy",
   },
   "spriteMaskId":null,
   "visible":true,

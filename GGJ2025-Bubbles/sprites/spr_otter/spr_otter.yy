@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"GGJ2025-Bubbles",
-    "path":"GGJ2025-Bubbles.yyp",
+    "name":"NPC Sprites",
+    "path":"folders/Sprites/NPC Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

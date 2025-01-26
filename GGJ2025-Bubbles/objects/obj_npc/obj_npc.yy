@@ -6,8 +6,8 @@
   "name":"obj_npc",
   "overriddenProperties":[],
   "parent":{
-    "name":"GGJ2025-Bubbles",
-    "path":"GGJ2025-Bubbles.yyp",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
