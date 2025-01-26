@@ -1,17 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_test",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_sticker_lighthouse",
+  "eventList":[],
   "managed":true,
-  "name":"obj_test",
+  "name":"obj_sticker_lighthouse",
   "overriddenProperties":[],
   "parent":{
     "name":"GGJ2025-Bubbles",
     "path":"GGJ2025-Bubbles.yyp",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_sticker",
+    "path":"objects/obj_sticker/obj_sticker.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_parrot",
-    "path":"sprites/spr_parrot/spr_parrot.yy",
+    "name":"Sprite5",
+    "path":"sprites/Sprite5/Sprite5.yy",
   },
   "spriteMaskId":null,
   "visible":true,
