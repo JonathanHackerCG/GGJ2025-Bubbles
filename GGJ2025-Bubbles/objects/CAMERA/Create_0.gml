@@ -340,6 +340,7 @@ function toggle_fullscreen()
 {
 	fullscreen = !fullscreen;
 	init_screen_default();
+	DIALOGUE.refresh();
 }
 #endregion
 

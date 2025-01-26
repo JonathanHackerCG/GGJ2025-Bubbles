@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"msc_sea",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":3,
+  "conversionMode":0,
+  "duration":85.705826,
+  "name":"msc_sea",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Audio/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"msc_sea.ogg",
+  "type":1,
+  "volume":1.0,
+}

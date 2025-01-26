@@ -2,7 +2,11 @@
 // You can write your code in this editor
 
 // hotkey
-if (keyboard_check_pressed(vk_enter)) {
+if (keyboard_check_pressed(vk_space)) {
+	// toggle between rooms
+	AUDIO.play("wave");
+	room_goto((room == rm_sea) ? rm_town : rm_sea);
+} else if (keyboard_check_pressed(vk_enter)) {
 	screen_save("My Beach");
 }
 

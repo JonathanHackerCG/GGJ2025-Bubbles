@@ -15,9 +15,11 @@ if (
 	GAME.grabbed_sticker_id = id;
 	x_offset = mouse_x - x;
 	y_offset = mouse_y - y;
-} else if (mouse_check_button_released(mb_left)) {
+	AUDIO.play("sticker_pickup");
+} else if (grabbed && mouse_check_button_released(mb_left)) {
 	grabbed = false;
 	GAME.grabbed_sticker_id = undefined;
+	AUDIO.play("sticker_place");
 }
 
 
