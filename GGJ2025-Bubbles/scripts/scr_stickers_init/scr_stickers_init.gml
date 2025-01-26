@@ -12,6 +12,17 @@ enum STICKER
 	BUSH,
 	BIG_CHEESE_HAT,
 	SPONGE_AND_STAR,
+	CHAIR,
+	CONE_SHELL,
+	CRAB,
+	MAITAI,
+	MESSAGE_IN_A_BOTTLE,
+	OIIAI,
+	SAND_DOLLAR,
+	SANDCASTLE,
+	TOWEL,
+	UMBRELLA,
+	COCONUT_DRINK,
 	__TOTAL
 }
 
@@ -87,3 +98,14 @@ sticker_define(STICKER.FLUFF_TREE, spr_tree_fluff);
 sticker_define(STICKER.PALM_TREE, spr_tree_palm);
 sticker_define(STICKER.PINE_TREE, spr_tree_pine);
 sticker_define(STICKER.SPONGE_AND_STAR, spr_spongeboy);
+sticker_define(STICKER.CHAIR, spr_chair);
+sticker_define(STICKER.CONE_SHELL, spr_cone_shell);
+sticker_define(STICKER.CRAB, spr_crab);
+sticker_define(STICKER.MAITAI, spr_maitai);
+sticker_define(STICKER.MESSAGE_IN_A_BOTTLE, spr_message_in_a_bottle);
+sticker_define(STICKER.OIIAI, spr_oiiai);
+sticker_define(STICKER.SAND_DOLLAR, spr_sand_dollar);
+sticker_define(STICKER.SANDCASTLE, spr_sandcastle);
+sticker_define(STICKER.TOWEL, spr_towel);
+sticker_define(STICKER.UMBRELLA, spr_umbrella);
+sticker_define(STICKER.COCONUT_DRINK, spr_coconut_drink);
