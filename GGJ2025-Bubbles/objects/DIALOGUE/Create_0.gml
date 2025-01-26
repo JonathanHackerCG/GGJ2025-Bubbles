@@ -5,6 +5,7 @@ fqueue = new FunctionQueue(id, false, true);
 __sprite = undefined;
 __text_string = "";
 __text_scribble = undefined;
+__typewriter = scribble_typist();
 
 //Methods
 #region active();
@@ -40,7 +41,14 @@ text = function(_string)
 		if (keyboard_check_pressed(vk_space))
 		{
 			keyboard_clear(vk_space);
-			return true;
+			if (__typewriter.get_state() == 1)
+			{
+				return true;
+			}
+			else
+			{
+				__typewriter.skip();
+			}
 		}
 		return false;
 	});
@@ -74,6 +82,7 @@ refresh = function()
 			.align(fa_center, fa_bottom)
 			.wrap(GUIW * 0.6)
 			.starting_format(get_font_scaled_name("text"));
+		__typewriter.in(0.75, 10);
 	}
 	
 	draw_text(16, 16, fqueue.print());
@@ -108,7 +117,7 @@ draw_gui = function()
 		draw_rectangle_set(0, GUIH - H, GUIW, GUIH, false, c_black, 0.50);
 		draw_reset();
 		
-		__text_scribble.draw(GUIW / 2, GUIH - BUFFER);
+		__text_scribble.draw(GUIW / 2, GUIH - BUFFER, __typewriter);
 	}
 }
 #endregion
