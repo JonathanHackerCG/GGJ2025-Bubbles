@@ -3,6 +3,7 @@
 current_room = rm_town;
 
 change_room = function () {
+	AUDIO.play("wave");
 	if (current_room == rm_town) {
 		// change to sea
 		current_room = rm_sea;
