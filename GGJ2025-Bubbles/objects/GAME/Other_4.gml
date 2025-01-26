@@ -9,4 +9,14 @@ if (room == rm_town) {
 	}
 	// Reset array
 	freed_sticker_ids = [];
+} else if (room == rm_sea) {
+	// Generate bubbles
+	var rand_bubble_count = irandom_range(1, 5);
+	for (var i = 0; i <= rand_bubble_count; i += 1) {
+		// Create up to rand_bubble_count of bubbles with random spawn position
+		var x_rand = irandom_range(0 + (spr_bubble.sprite_width / 2), room_width - (spr_bubble.sprite_width / 2));
+		var y_rand = irandom_range(0 + (spr_bubble.sprite_height / 2), room_height + spr_bubble.sprite_height / 2);
+		instance_create_layer(x_rand, y_rand, "Instances", obj_bubble);
+	}
+	
 }

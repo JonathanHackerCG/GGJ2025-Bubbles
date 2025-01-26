@@ -16,3 +16,4 @@ if (y + sprite_height > 0) {
 
 sticker.y = y;
 sticker.x = x;
+
