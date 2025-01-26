@@ -2,10 +2,7 @@
 // You can write your code in this editor
 
 // hotkey
-if (keyboard_check_pressed(vk_space)) {
-	// toggle between rooms
-	room_goto((room == rm_sea) ? rm_town : rm_sea);
-} else if (keyboard_check_pressed(vk_enter)) {
+if (keyboard_check_pressed(vk_enter)) {
 	screen_save("My Beach");
 }
 
@@ -15,4 +12,16 @@ if (keyboard_check_pressed(vk_space)) {
 
 if (room == rm_sea && instance_number(obj_bubble) <= 0) {
 	room_goto(rm_town);
+}
+
+
+if (grabbed_sticker_id != undefined && room == rm_town) {
+	// Ensure UI elements are not seen on beach while dragging sticker
+	with(obj_ux_buttons) {
+		visible = false;
+	}
+} else {
+	with(obj_ux_buttons) {
+		visible = true;
+	}
 }
