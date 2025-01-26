@@ -2,7 +2,9 @@ global.__sticker_index = array_create(STICKER.__TOTAL, undefined);
 enum STICKER
 {
 	PARROT,
-	LIGHTHOUSE,
+	OTTER,
+	FISH,
+	MAYOR,
 	PINE_TREE,
 	FLUFF_TREE,
 	PALM_TREE,
@@ -46,9 +48,14 @@ function sticker_define(_id, _sprite_index)
 }
 #endregion
 
+// NPCs
 sticker_define(STICKER.PARROT, spr_parrot_icon);
-sticker_define(STICKER.WILSON, spr_ball_test);
-sticker_define(STICKER.LIGHTHOUSE, spr_lighthouse_test);
+sticker_define(STICKER.OTTER, spr_otter_icon);
+sticker_define(STICKER.FISH, spr_fish_icon);
+sticker_define(STICKER.MAYOR, spr_mayor_icon);
+
+// Items
+sticker_define(STICKER.WILSON, spr_willy);
 sticker_define(STICKER.BIG_CHEESE_HAT, spr_big_cheese);
 sticker_define(STICKER.BUSH, spr_bush);
 sticker_define(STICKER.FLUFF_TREE, spr_tree_fluff);

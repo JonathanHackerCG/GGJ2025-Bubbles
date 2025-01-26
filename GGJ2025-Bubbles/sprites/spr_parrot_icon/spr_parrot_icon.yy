@@ -28,7 +28,7 @@
   "origin":4,
   "parent":{
     "name":"Parrot",
-    "path":"folders/Parrot.yy",
+    "path":"folders/Sprites/NPC Sprites/Parrot.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
