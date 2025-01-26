@@ -1,6 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Game system
 grabbed_sticker_id = undefined;
+freed_sticker_ids = [];
 randomize();
 
 // Go to the sea room
