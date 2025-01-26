@@ -38,3 +38,14 @@ function Sticker(_properties = undefined) constructor
 	#endregion
 }
 #endregion
+
+#region sticker_exists(sticker_id);
+function sticker_exists(_sticker_id)
+{
+	with (obj_sticker)
+	{
+		if (sticker_id == _sticker_id) { return true; }
+	}
+	return false;
+}
+#endregion
