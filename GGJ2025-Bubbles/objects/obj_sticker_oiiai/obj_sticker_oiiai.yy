@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_sticker_lighthouse",
+  "%Name":"obj_sticker_oiiai",
   "eventList":[],
   "managed":true,
-  "name":"obj_sticker_lighthouse",
+  "name":"obj_sticker_oiiai",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_oiiai",
+    "path":"sprites/spr_oiiai/spr_oiiai.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
