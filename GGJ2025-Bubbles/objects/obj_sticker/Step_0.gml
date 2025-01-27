@@ -32,3 +32,5 @@ if (room == rm_town)
 	x = clamp(x, 0, room_width);
 	y = clamp(y, 0, room_height);
 }
+
+depth = -bbox_bottom + 100;

@@ -40,6 +40,7 @@ text = function(_string)
 	}, [_string]);
 	fqueue.push(function()
 	{
+		if (position_meeting(mouse_x, mouse_y, [obj_ux_sound, obj_ux_game_end])) { return false; }
 		if (keyboard_check_released(vk_space) || mouse_check_button_released(mb_left))
 		{
 			keyboard_clear(vk_space);

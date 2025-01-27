@@ -24,8 +24,19 @@ else
 }
 
 sticker.sticker_id = sticker_id;
-var xscale = floor((sprite_get_width(spr_bubble) / sticker.sprite_width) * 4) * 0.25;
-var yscale = floor((sprite_get_height(spr_bubble) / sticker.sprite_height) * 4) * 0.25;
+
+var wb = sprite_get_width(spr_bubble);
+var ws = sticker.sprite_width;
+var hb = sprite_get_height(spr_bubble);
+var hs = sticker.sprite_height;
+
+var xscale = 1;
+var yscale = 1;
+if (ws > wb || hs > hb)
+{
+	xscale = floor((wb / ws) * 4) * 0.25;
+	yscale = floor((hb / hs) * 4) * 0.25;
+}
 
 // Scale sticker to fit inside bubble
 sticker.image_xscale = min(xscale, yscale)

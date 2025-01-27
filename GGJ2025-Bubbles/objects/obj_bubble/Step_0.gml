@@ -7,8 +7,10 @@ if (!DIALOGUE.active())
 		mouse_clear(mb_left);
 		sticker.image_xscale = 1;
 		sticker.image_yscale = 1;
+		sticker.direction = 90;
+		sticker.speed = 3;
 		// Insert item sticker into GAME's list of freed stickers
-		array_push(GAME.freed_sticker_ids, sticker.sticker_id)
+		array_push(GAME.freed_sticker_ids, sticker.sticker_id);
 		instance_destroy();
 	}
 }

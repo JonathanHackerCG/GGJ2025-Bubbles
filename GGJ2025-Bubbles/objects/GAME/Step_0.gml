@@ -5,7 +5,7 @@
 //if (keyboard_check_pressed(vk_enter)) {
 //	screen_save("My Beach");
 //}
-if (keyboard_check_pressed(vk_escape)) {
+if (!DIALOGUE.active() && keyboard_check_pressed(vk_escape)) {
 	game_end();
 }
 
@@ -13,7 +13,7 @@ if (keyboard_check_pressed(vk_escape)) {
 //	show_debug_message(freed_sticker_ids)
 //}
 
-if (room == rm_sea && instance_number(obj_bubble) <= 0) {
+if (!DIALOGUE.active() && room == rm_sea && instance_number(obj_bubble) <= 0) {
 	room_goto(rm_town);
 }
 
